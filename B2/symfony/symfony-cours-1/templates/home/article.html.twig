@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% if found == true %}
+        <h1>{{ article.title }}</h1>
+        <p>Written by {{ article.author }}</p>
+        <p>{{ article.text }}</p>
+    {% else %}
+        <p>Nothing to show here</p>
+    {% endif %}
+{% endblock %}
