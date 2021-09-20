@@ -1,3 +1,9 @@
 [submodule "B2/WORKSHOP_B2"]
 	path = B2/WORKSHOP_B2
 	url = https://github.com/Germain-L/WORKSHOP_B2.git
+[submodule "B1/python/Othello"]
+	path = B1/python/Othello
+	url = https://github.com/Germain-L/Othello.git
+[submodule "B1/WORKSHOP-B1"]
+	path = B1/WORKSHOP-B1
+	url = https://github.com/Germain-L/WORKSHOP-B1.git
