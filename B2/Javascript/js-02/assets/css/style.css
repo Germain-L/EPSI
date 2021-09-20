@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #191919;
+  color: #f1f1f1;
+  font-family: "Montserrat-Regular", sans-serif;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+.sections {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sections > div > div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+
+#section1 > div > div * {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+#section2 {
+  background-color: #3c3c3c;
+}
+
+#section3 > div {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#section3 > div > div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#fooooooooooter {
+  text-align: center;
+}

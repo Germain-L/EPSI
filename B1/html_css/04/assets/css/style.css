@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #191919;
+    color: #F7F7F7;
+}
+
+section {
+    min-height: 200px;
+}
+
+section:nth-child(odd) {
+    background-color: #3c3c3c;
+}
+
+section>div {
+    height: 200px;
+}
+
+.row {
+    border: 3px solid black;
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.blue {
+    background-color: steelblue;
+    }
+
+.gold {
+    background-color: gold;
+}
+
+.red {
+    background-color: firebrick;
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.fuschia {
+    background-color: fuchsia;
+}
+
+.coral {
+    background-color: coral;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}​​
+
+.pad-around {
+    display: flex;
+    padding: 20px;
+    width: calc(100% - 40px);
+    min-height: 160px;
+    background-color: grey;
+}
+
+.margin-around {
+    display: flex;
+    margin: 20px;
+    width: calc(100% - 40px);
+    min-height: 160px;
+    background-color: rgb(0, 0, 0);
+}

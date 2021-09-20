@@ -6,5 +6,8 @@
 		{
 			"path": "B2/Javascript/js-02"
 		}
-	]
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "js-02"
+	}
 }
