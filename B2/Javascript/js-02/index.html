@@ -6,56 +6,72 @@
     <title>Cours JS E2 - 02</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <style id="rootStyle">
+        :root {
+          --bg: black;
+          --color: white;
+        }
+      </style>
 </head>
 <body>
-<section id="section1" class="sections">
-    <div class="xLarge-12 large-12 medium-12 small-12 xSmall-12">
-        <div class="firstDiv">
-            <h1>Ma page</h1>
+    <header class="sections">
+        <div id="btnContainer">
+            <button type="button">CLique moi fort oh oui</button>
         </div>
-        <div id="bloc1">
-            <p class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, 
-                porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, 
-                eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies 
-                ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. 
-                Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-            </p>
-        </div>
-    </div>
-</section>
-<section id="section2" class="sections">
-    <div class="xLarge-4 large-4 medium-6 small-12 xSmall-12">
-        <img src="./assets//media/images/kevin-et-laurianne-langlais-CQzbylxRM7k-unsplash.jpg" alt="Ma photo de ouf">
-    </div>
-    <div class="xLarge-8 large-8 medium-6 small-12 xSmall-12">
-        <div id="bloc2">
-            <p class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, 
-                porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, 
-                eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies 
-                ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. 
-                Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-            </p>
-        </div>
-    </div>
-</section>
-<section id="section3" class="sections">
-    <div class="xLarge-6 large-6 medium-6 small-12 xSmall-12">
-        <p id="fooooooooooter">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, 
-            porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, 
-            eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies 
-            ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. 
-            Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-        </p>
-    </div>
-    <div id="xLarge-6 large-6 medium-6 small-12 xSmall-12"">
-        <video controls>
-            <source src="./assets/media/videos/Ammersee _wavesailing_ and jumping.mp4"/>
-        </video>
-    </div>
-</section>
-    <script src="./assets/js/script.js"></script>
+    </header>
+    <main>
+
+        <section id="section1" class="sections">
+            <div class="xLarge-12 large-12 medium-12 small-12 xSmall-12">
+                <div class="firstDiv">
+                    <h1>Ma page</h1>
+                </div>
+                <div id="bloc1">
+                    <p class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, 
+                        porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, 
+                        eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies 
+                        ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. 
+                        Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="section2" class="sections">
+            <div class="xLarge-4 large-4 medium-6 small-12 xSmall-12">
+                <img src="./assets//media/images/kevin-et-laurianne-langlais-CQzbylxRM7k-unsplash.jpg" alt="Ma photo de ouf">
+            </div>
+            <div class="xLarge-8 large-8 medium-6 small-12 xSmall-12">
+                <div id="bloc2">
+                    <p class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, 
+                        porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, 
+                        eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies 
+                        ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. 
+                        Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="section3" class="sections">
+            <div class="xLarge-6 large-6 medium-6 small-12 xSmall-12">
+                <p id="fooooooooooter">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, 
+                    porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, 
+                    eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies 
+                    ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. 
+                    Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                </p>
+            </div>
+            <div id="xLarge-6 large-6 medium-6 small-12 xSmall-12"">
+                <video controls>
+                    <source src="./assets/media/videos/Ammersee _wavesailing_ and jumping.mp4"/>
+                </video>
+            </div>
+        </section>
+    </main>
+    <!-- <script src="./assets/js/script.js"></script> -->
+    <script src="./assets/js/script2.js"></script>
+    <script src="./assets/js/cursor.js"></script>
 </body>
 </html>

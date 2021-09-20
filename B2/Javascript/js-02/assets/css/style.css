@@ -5,9 +5,10 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #191919;
-  color: #f1f1f1;
+  background-color: var(--bg);
+  color: var(--color);
   font-family: "Montserrat-Regular", sans-serif;
+  transition: all ease in out 0.5s;
 }
 
 img,
@@ -53,4 +54,24 @@ video {
 
 #fooooooooooter {
   text-align: center;
+}
+
+#btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btnContainer button {
+  margin: 20px;
+  background-color: pink;
+  color: #fff;
+  border-radius: 200px;
+  padding: 10px 20px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.active {
+  background-color: gold !important
 }
