@@ -8,6 +8,7 @@ var light = ':root {\n' +
     '            --color: black;\n' +
     '        }'
 
+
 // btn.onclick = function (ev) {
 //     var target = ev.currentTarget;
 //     if (target.classList.contains('active')) {
@@ -21,15 +22,28 @@ var light = ':root {\n' +
 //     }
 // }
 
-btn.addEventListener('click', (ev) => {
-    var target = ev.currentTarget;
-    if (target.classList.contains('active')) {
-        target.classList.remove('active')
-        target.innerHTML = 'Light mode'
-        document.querySelector('#rootStyle').innerHTML = dark;
-    } else {
+
+const stt = 'active';
+
+
+function themeSelector(ev, stt = false) {
+    var target = (ev.type !== 'load') ? ev.currentTarget : btn;
+    if (stt === 'active') {
         target.classList.add('active')
         target.innerHTML = 'Dark mode'
         document.querySelector('#rootStyle').innerHTML = light;
     }
+    if (target.classList.contains('active')) {
+        target.classList.remove('active')
+        target.innerHTML = 'Light mode'
+        document.querySelector('#rootStyle').innerHTML = dark;
+    }
+}
+
+btn.addEventListener('click', (ev) => {
+    themeSelector(ev);
 });
+
+window.addEventListener('load', function (ev) {
+    themeSelector(ev, stt);
+})
