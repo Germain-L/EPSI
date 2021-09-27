@@ -1,6 +1,6 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import { slide, fade } from "svelte/transition";
+  import { slide } from "svelte/transition";
 
   let subject = "";
   let email = "";

@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from "svelte";
   import { slide, fade } from "svelte/transition";
   let isVisible = false;
 </script>

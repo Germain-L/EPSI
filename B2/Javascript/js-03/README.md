@@ -1,7 +1,7 @@
-# How to run
-
-install, build and run with
+# Comment faire tourner
 
 ```bash
+npm install
+npm run build
 npm run preview
 ```
