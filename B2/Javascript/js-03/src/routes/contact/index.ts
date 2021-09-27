@@ -1,4 +1,3 @@
-import sendEmailJs from '../../email/send';
 import { data } from '../../store/data';
 
 /**
@@ -37,8 +36,6 @@ export async function post({ body }) {
             }
         };
     }
-
-    sendEmailJs(email, subject, message);
 
     return {
         status: 200,
