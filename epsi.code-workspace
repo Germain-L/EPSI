@@ -5,9 +5,12 @@
 		},
 		{
 			"path": "B2/Javascript/js-02"
+		},
+		{
+			"path": "B2/Javascript/js-03"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "js-02"
+		"liveServer.settings.multiRootWorkspaceName": "js-03"
 	}
 }
