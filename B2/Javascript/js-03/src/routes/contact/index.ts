@@ -1,3 +1,4 @@
+import sendEmailJs from '../../email/send';
 import { data } from '../../store/data';
 
 /**
@@ -12,17 +13,17 @@ function validateEmail(email) {
 
 export async function post({ body }) {
     const content = JSON.parse(body);
-    const name = content.name,
+    const subject = content.subject,
         email = content.email,
         message = content.message;
 
     // check if the data is empty
-    if (!name || !email || !message) {
+    if (!subject || !email || !message) {
         console.log('empty');
         return {
             status: 400,
             body: {
-                text: 'Missing required fields'
+                text: 'Champs obligatoires manquants'
             }
         };
     }
@@ -32,16 +33,12 @@ export async function post({ body }) {
         return {
             status: 400,
             body: {
-                text: 'Invalid email'
+                text: 'Email non valide'
             }
         };
     }
 
-    // update data with name email and message
-    const newData = { name, email, message };
-    data.update(() => newData);
-
-    
+    sendEmailJs(email, subject, message);
 
     return {
         status: 200,

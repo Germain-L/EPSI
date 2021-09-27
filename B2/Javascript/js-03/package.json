@@ -4,22 +4,25 @@
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
-		"preview": "svelte-kit build && svelte-kit preview --open",
+		"preview": "npm i && svelte-kit build && svelte-kit preview --open",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
 	},
 	"devDependencies": {
 		"@sveltejs/kit": "next",
+		"autoprefixer": "^10.3.4",
+		"cssnano": "^5.0.8",
+		"mailgun-js": "^0.22.0",
+		"nodemailer": "^6.6.5",
+		"postcss": "^8.3.6",
+		"postcss-load-config": "^3.1.0",
 		"svelte": "^3.42.6",
 		"svelte-check": "^2.2.6",
 		"svelte-preprocess": "^4.9.4",
+		"tailwindcss": "^2.2.15",
 		"tslib": "^2.3.1",
-		"typescript": "^4.4.3",
-		"postcss": "^8.3.6",
-		"postcss-load-config": "^3.1.0",
-		"autoprefixer": "^10.3.4",
-		"cssnano": "^5.0.8",
-		"tailwindcss": "^2.2.15"
+		"typescript": "^4.4.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {}
 }

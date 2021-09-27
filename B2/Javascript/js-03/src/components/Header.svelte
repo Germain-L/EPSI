@@ -12,7 +12,7 @@
     <a
       on:click={closeNav}
       class="title text-3xl font-bold md:text-4xl lg:text-5xl"
-      href="/">Home</a
+      href="/">Site de Germain</a
     >
     <button on:click={() => (isVisible = !isVisible)}>
       {#if isVisible}
@@ -51,16 +51,16 @@
   {#if isVisible}
     <div class="flex flex-col" transition:slide>
       <a
-        class="font-medium hover:font-semibold h-8 flex flex-col items-start justify-center"
+        class="font-medium hover:font-semibold h-8 flex flex-col items-end justify-center"
         on:click={closeNav}
         href="/contact">contact</a
       >
       <a
-        class="font-medium hover:font-semibold h-8 flex flex-col items-start justify-center"
+        class="font-medium hover:font-semibold h-8 flex flex-col items-end justify-center"
         on:click={closeNav}
-        href="/about"
+        href="/"
       >
-        about
+        home
       </a>
     </div>
   {/if}

@@ -2,7 +2,7 @@
   import { goto } from "$app/navigation";
   import { slide, fade } from "svelte/transition";
 
-  let name = "";
+  let subject = "";
   let email = "";
   let message = "";
   let errorMessage = "";
@@ -12,7 +12,7 @@
     const response: Response = await fetch("/contact", {
       method: "POST",
       body: JSON.stringify({
-        name: name,
+        subject: subject,
         email: email,
         message: message,
       }),
@@ -38,24 +38,24 @@
   class="space-y-6"
   on:submit|preventDefault={send}
 >
-  <h1 class="text-xl md:text-2xl lg:text-4xl">Shoot us an email !</h1>
-  <div class="space-y-3">
-    <label for="name">Name *</label>
-    <input
-      type="text"
-      name="name"
-      id="name"
-      bind:value={name}
-      class="w-full px-3 py-2  border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-100 focus:border-blue-300 "
-    />
-  </div>
+  <h1 class="text-xl md:text-2xl lg:text-4xl">Envoie moi un email</h1>
   <div class="space-y-3">
     <label for="email">Email *</label>
     <input
+    type="text"
+    name="email"
+    id="email"
+    bind:value={email}
+    class="w-full px-3 py-2  border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-100 focus:border-blue-300 "
+    />
+  </div>
+  <div class="space-y-3">
+    <label for="name">Sujet *</label>
+    <input
       type="text"
-      name="email"
-      id="email"
-      bind:value={email}
+      name="subject"
+      id="subject"
+      bind:value={subject}
       class="w-full px-3 py-2  border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-100 focus:border-blue-300 "
     />
   </div>
@@ -86,7 +86,7 @@
     <button
       type="submit"
       class="py-2 px-4 border border-transparent text-sm font-medium rounded-md text-black bg-white ring-2 hover:bg-blue-300 focus:ring-offset-2 focus:ring-blue-500"
-      >Send</button
+      >Envoyer</button
     >
   </div>
 </form>
