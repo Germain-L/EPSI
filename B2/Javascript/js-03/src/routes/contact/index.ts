@@ -1,3 +1,5 @@
+import { data } from '../../store/data';
+
 /**
  * @type {import('@sveltejs/kit').RequestHandler}
  */
@@ -34,6 +36,12 @@ export async function post({ body }) {
             }
         };
     }
+
+    // update data with name email and message
+    const newData = { name, email, message };
+    data.update(() => newData);
+
+    
 
     return {
         status: 200,

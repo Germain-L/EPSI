@@ -38,8 +38,9 @@
   class="space-y-6"
   on:submit|preventDefault={send}
 >
+  <h1 class="text-xl md:text-2xl lg:text-4xl">Shoot us an email !</h1>
   <div class="space-y-3">
-    <label for="name">Enter your name</label>
+    <label for="name">Name *</label>
     <input
       type="text"
       name="name"
@@ -49,7 +50,7 @@
     />
   </div>
   <div class="space-y-3">
-    <label for="email">Enter your email</label>
+    <label for="email">Email *</label>
     <input
       type="text"
       name="email"
@@ -60,7 +61,7 @@
   </div>
 
   <div class="flex flex-col space-y-3">
-    <label for="message">Enter your message</label>
+    <label for="message">Message *</label>
     <textarea
       name="message"
       id="message"
