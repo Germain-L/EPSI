@@ -1,0 +1,16 @@
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\bin\Debug\net5.0\Devin.exe
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\bin\Debug\net5.0\Devin.deps.json
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\bin\Debug\net5.0\Devin.runtimeconfig.json
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\bin\Debug\net5.0\Devin.runtimeconfig.dev.json
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\bin\Debug\net5.0\Devin.dll
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\bin\Debug\net5.0\ref\Devin.dll
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\bin\Debug\net5.0\Devin.pdb
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\obj\Debug\net5.0\Devin.csproj.AssemblyReference.cache
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\obj\Debug\net5.0\Devin.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\obj\Debug\net5.0\Devin.AssemblyInfoInputs.cache
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\obj\Debug\net5.0\Devin.AssemblyInfo.cs
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\obj\Debug\net5.0\Devin.csproj.CoreCompileInputs.cache
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\obj\Debug\net5.0\Devin.dll
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\obj\Debug\net5.0\ref\Devin.dll
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\obj\Debug\net5.0\Devin.pdb
+D:\projects\EPSI\B2\C#\lesson-1\Devin\Devin\obj\Debug\net5.0\Devin.genruntimeconfig.cache
