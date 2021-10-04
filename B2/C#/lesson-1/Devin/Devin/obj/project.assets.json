@@ -8,20 +8,30 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\germa\\.nuget\\packages\\": {}
+    "C:\\Users\\germa\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\EPSI\\B2\\C#\\lesson-1\\Devin\\Devin\\Devin.csproj",
+      "projectUniqueName": "C:\\projects\\EPSI\\EPSI\\B2\\C#\\lesson-1\\Devin\\Devin\\Devin.csproj",
       "projectName": "Devin",
-      "projectPath": "D:\\projects\\EPSI\\B2\\C#\\lesson-1\\Devin\\Devin\\Devin.csproj",
+      "projectPath": "C:\\projects\\EPSI\\EPSI\\B2\\C#\\lesson-1\\Devin\\Devin\\Devin.csproj",
       "packagesPath": "C:\\Users\\germa\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\EPSI\\B2\\C#\\lesson-1\\Devin\\Devin\\obj\\",
+      "outputPath": "C:\\projects\\EPSI\\EPSI\\B2\\C#\\lesson-1\\Devin\\Devin\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\germa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -60,7 +70,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
