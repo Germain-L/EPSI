@@ -7,6 +7,6 @@
 [submodule "B1/WORKSHOP-B1"]
 	path = B1/WORKSHOP-B1
 	url = https://github.com/Germain-L/WORKSHOP-B1.git
-[submodule "B2/symfony/TP-Symfony"]
-	path = B2/symfony/TP-Symfony
-	url = https://github.com/Germain-L/TP-Symfony
+[submodule "B2/symfony/company-directory"]
+	path = B2/symfony/company-directory
+	url = https://github.com/Germain-L/company-directory
