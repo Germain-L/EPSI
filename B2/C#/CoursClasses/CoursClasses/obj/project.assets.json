@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\epsi\\B2\\C#\\RPS\\RPS.csproj",
-      "projectName": "RPS",
-      "projectPath": "D:\\projects\\epsi\\B2\\C#\\RPS\\RPS.csproj",
+      "projectUniqueName": "D:\\projects\\epsi\\B2\\C#\\CoursClasses\\CoursClasses\\CoursClasses.csproj",
+      "projectName": "CoursClasses",
+      "projectPath": "D:\\projects\\epsi\\B2\\C#\\CoursClasses\\CoursClasses\\CoursClasses.csproj",
       "packagesPath": "C:\\Users\\germa\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\epsi\\B2\\C#\\RPS\\obj\\",
+      "outputPath": "D:\\projects\\epsi\\B2\\C#\\CoursClasses\\CoursClasses\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\germa\\AppData\\Roaming\\NuGet\\NuGet.Config",

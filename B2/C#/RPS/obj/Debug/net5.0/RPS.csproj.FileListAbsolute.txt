@@ -1,0 +1,16 @@
+D:\projects\epsi\B2\C#\RPS\bin\Debug\net5.0\RPS.exe
+D:\projects\epsi\B2\C#\RPS\bin\Debug\net5.0\RPS.deps.json
+D:\projects\epsi\B2\C#\RPS\bin\Debug\net5.0\RPS.runtimeconfig.json
+D:\projects\epsi\B2\C#\RPS\bin\Debug\net5.0\RPS.runtimeconfig.dev.json
+D:\projects\epsi\B2\C#\RPS\bin\Debug\net5.0\RPS.dll
+D:\projects\epsi\B2\C#\RPS\bin\Debug\net5.0\ref\RPS.dll
+D:\projects\epsi\B2\C#\RPS\bin\Debug\net5.0\RPS.pdb
+D:\projects\epsi\B2\C#\RPS\obj\Debug\net5.0\RPS.csproj.AssemblyReference.cache
+D:\projects\epsi\B2\C#\RPS\obj\Debug\net5.0\RPS.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\epsi\B2\C#\RPS\obj\Debug\net5.0\RPS.AssemblyInfoInputs.cache
+D:\projects\epsi\B2\C#\RPS\obj\Debug\net5.0\RPS.AssemblyInfo.cs
+D:\projects\epsi\B2\C#\RPS\obj\Debug\net5.0\RPS.csproj.CoreCompileInputs.cache
+D:\projects\epsi\B2\C#\RPS\obj\Debug\net5.0\RPS.dll
+D:\projects\epsi\B2\C#\RPS\obj\Debug\net5.0\ref\RPS.dll
+D:\projects\epsi\B2\C#\RPS\obj\Debug\net5.0\RPS.pdb
+D:\projects\epsi\B2\C#\RPS\obj\Debug\net5.0\RPS.genruntimeconfig.cache

@@ -1,4 +1,5 @@
 ﻿using System;
+using RPS.Players;
 
 namespace RPS
 {
@@ -6,7 +7,15 @@ namespace RPS
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome to rock paper scissors !");
+
+            while (true)
+            {
+                Game game = new Game();
+                Player winner  = game.Play();
+                
+                Console.WriteLine($"{winner} wins\n");
+            }
         }
     }
 }
