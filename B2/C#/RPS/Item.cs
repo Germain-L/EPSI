@@ -13,7 +13,7 @@ namespace RPS
             _number = number;
         }
 
-        public string Name
+        private string Name
         {
             get => "Rock,Paper,Scissors".Split(",")[Number];
         }

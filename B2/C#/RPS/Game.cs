@@ -18,7 +18,7 @@ namespace RPS
                 user.Play();
                 cpu.Play();
 
-                Console.WriteLine($"You played {user.CurrentItem} vs {cpu.CurrentItem}");
+                Console.WriteLine($"\nYou played {user.CurrentItem} vs {cpu.CurrentItem}");
 
                 int res = (3 + user.CurrentItem.Number - cpu.CurrentItem.Number) % 3;
 
@@ -41,6 +41,7 @@ namespace RPS
                         Console.WriteLine("CPU wins");
                     }
                 }
+                Console.WriteLine();
             }
 
             return _scores[0] == 3 ? user : cpu;
