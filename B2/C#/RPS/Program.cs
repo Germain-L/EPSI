@@ -23,7 +23,7 @@ namespace RPS
                 
                 var choice = Console.ReadLine().ToLower();
                 
-                if (choice == "N")
+                if (choice == "n")
                 {
                     playAgain = false;
                 }

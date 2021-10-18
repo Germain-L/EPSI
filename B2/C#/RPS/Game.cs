@@ -5,7 +5,6 @@ namespace RPS
 {
     public class Game
     {
-        private int[] _scores = new[] {0, 0};
 
         public Player Play()
         {
@@ -13,7 +12,7 @@ namespace RPS
 
             CPU cpu = new CPU();
 
-            while (_scores[0] < 3 || _scores[1] < 3)
+            while (user.Score < 3 || cpu.Score < 3)
             {
                 user.Play();
                 cpu.Play();
@@ -32,19 +31,19 @@ namespace RPS
                     var roundWinner = res - 1;
                     if (user.CurrentItem.Number == roundWinner)
                     {
-                        _scores[0]++;
+                        user.Score++;
                         Console.WriteLine("You win");
                     }
                     else
                     {
-                        _scores[1]++;
+                        cpu.Score++;
                         Console.WriteLine("CPU wins");
                     }
                 }
                 Console.WriteLine();
             }
 
-            return _scores[0] == 3 ? user : cpu;
+            return user.Score > cpu.Score ? user : cpu;
         }
     }
 }
