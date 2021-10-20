@@ -1,0 +1,16 @@
+D:\projects\epsi\B2\C#\Connect4\Connect4\bin\Debug\net5.0\Connect4.exe
+D:\projects\epsi\B2\C#\Connect4\Connect4\bin\Debug\net5.0\Connect4.deps.json
+D:\projects\epsi\B2\C#\Connect4\Connect4\bin\Debug\net5.0\Connect4.runtimeconfig.json
+D:\projects\epsi\B2\C#\Connect4\Connect4\bin\Debug\net5.0\Connect4.runtimeconfig.dev.json
+D:\projects\epsi\B2\C#\Connect4\Connect4\bin\Debug\net5.0\Connect4.dll
+D:\projects\epsi\B2\C#\Connect4\Connect4\bin\Debug\net5.0\ref\Connect4.dll
+D:\projects\epsi\B2\C#\Connect4\Connect4\bin\Debug\net5.0\Connect4.pdb
+D:\projects\epsi\B2\C#\Connect4\Connect4\obj\Debug\net5.0\Connect4.csproj.AssemblyReference.cache
+D:\projects\epsi\B2\C#\Connect4\Connect4\obj\Debug\net5.0\Connect4.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\epsi\B2\C#\Connect4\Connect4\obj\Debug\net5.0\Connect4.AssemblyInfoInputs.cache
+D:\projects\epsi\B2\C#\Connect4\Connect4\obj\Debug\net5.0\Connect4.AssemblyInfo.cs
+D:\projects\epsi\B2\C#\Connect4\Connect4\obj\Debug\net5.0\Connect4.csproj.CoreCompileInputs.cache
+D:\projects\epsi\B2\C#\Connect4\Connect4\obj\Debug\net5.0\Connect4.dll
+D:\projects\epsi\B2\C#\Connect4\Connect4\obj\Debug\net5.0\ref\Connect4.dll
+D:\projects\epsi\B2\C#\Connect4\Connect4\obj\Debug\net5.0\Connect4.pdb
+D:\projects\epsi\B2\C#\Connect4\Connect4\obj\Debug\net5.0\Connect4.genruntimeconfig.cache
