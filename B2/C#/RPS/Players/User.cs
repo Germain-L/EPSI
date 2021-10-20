@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace RPS.Players
 {
@@ -6,19 +7,16 @@ namespace RPS.Players
     {
         public override void Play()
         {
-            int choice = -1;
+            int choice;
 
-            Console.Write("1) Rock, 2) Paper, 3) Scissors ? : ");
-            choice = int.Parse(Console.ReadLine()) - 1;
-
-            while (choice < 0 || choice > 3)
-            {
-                Console.WriteLine("Please only enter 1 , 2 or 3");
-                choice = int.Parse(Console.ReadLine()) - 1;
-            }
+            var availableChoices = new int[] {0, 1, 2};
 
 
-            CurrentItem = new Item(choice);
+            do Console.WriteLine("1) Rock, 2) Paper, 3) Scissors ? : ");
+            while (!int.TryParse(Console.ReadLine(), out choice));
+
+
+            CurrentItem = new Item(choice - 1);
         }
 
         public override string ToString() => "You";
