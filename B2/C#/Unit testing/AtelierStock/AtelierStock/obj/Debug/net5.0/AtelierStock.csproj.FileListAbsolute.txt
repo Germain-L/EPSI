@@ -1,0 +1,16 @@
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\bin\Debug\net5.0\AtelierStock.exe
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\bin\Debug\net5.0\AtelierStock.deps.json
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\bin\Debug\net5.0\AtelierStock.runtimeconfig.json
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\bin\Debug\net5.0\AtelierStock.runtimeconfig.dev.json
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\bin\Debug\net5.0\AtelierStock.dll
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\bin\Debug\net5.0\ref\AtelierStock.dll
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\bin\Debug\net5.0\AtelierStock.pdb
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\obj\Debug\net5.0\AtelierStock.csproj.AssemblyReference.cache
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\obj\Debug\net5.0\AtelierStock.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\obj\Debug\net5.0\AtelierStock.AssemblyInfoInputs.cache
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\obj\Debug\net5.0\AtelierStock.AssemblyInfo.cs
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\obj\Debug\net5.0\AtelierStock.csproj.CoreCompileInputs.cache
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\obj\Debug\net5.0\AtelierStock.dll
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\obj\Debug\net5.0\ref\AtelierStock.dll
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\obj\Debug\net5.0\AtelierStock.pdb
+D:\projects\epsi\B2\C#\Unit testing\AtelierStock\AtelierStock\obj\Debug\net5.0\AtelierStock.genruntimeconfig.cache
