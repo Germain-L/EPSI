@@ -49,6 +49,7 @@ namespace Puissance4
 
                     Console.WriteLine(_checkVer(line: line, col: column));
                     Console.WriteLine(_checkHor(line: line, col: column));
+                    Console.WriteLine(_checkDiags(line: line, col: column));
                     break;
                 }
             }
@@ -69,7 +70,6 @@ namespace Puissance4
         private bool _checkVer(int line, int col)
         {
             char piecePlayed = _board[col, line];
-            Console.WriteLine($"Searching for {piecePlayed}");
             int consecutive = 0;
 
             for (var i = line - 4; i < line + 4; i++)
@@ -100,7 +100,6 @@ namespace Puissance4
         private bool _checkHor(int line, int col)
         {
             char piecePlayed = _board[col, line];
-            Console.WriteLine($"Searching for {piecePlayed}");
             int consecutive = 0;
 
             for (var i = col - 4; i < col + 4; i++)
@@ -128,7 +127,7 @@ namespace Puissance4
             return false;
         }
 
-        private bool _checkDiag(int line, int col)
+        private bool _checkDiags(int line, int col)
         {
             char piecePlayed = _board[col, line];
 
@@ -138,42 +137,9 @@ namespace Puissance4
             int consecutive = 0;
 
             // check topleft - bottom right
-            lineIndex = line - 4;
-            colIndex = line - 4;
-            while (lineIndex < line + 3 && colIndex < col + 3)
-            {
-                // check for index errors
-                if (lineIndex > LineCount - 1
-                    || lineIndex < 0
-                    || colIndex > ColCount
-                    || colIndex < 0)
-                {
-                    continue;
-                }
-
-                if (_board[colIndex, lineIndex] == piecePlayed)
-                {
-                    consecutive++;
-                }
-                else
-                {
-                    consecutive = 0;
-                }
-
-                if (consecutive >= 4)
-                {
-                    return true;
-                }
-
-                lineIndex++;
-                colIndex++;
-            }
-
             lineIndex = line + 4;
-            colIndex = col - 4;
-
-
-            while (lineIndex < line - 3 && colIndex < col + 3)
+            colIndex = line - 4;
+            while (lineIndex < line - 4 && colIndex < col + 4)
             {
                 // check for index errors
                 if (lineIndex > LineCount - 1
@@ -183,7 +149,7 @@ namespace Puissance4
                 {
                     continue;
                 }
-
+            
                 if (_board[colIndex, lineIndex] == piecePlayed)
                 {
                     consecutive++;
@@ -192,15 +158,47 @@ namespace Puissance4
                 {
                     consecutive = 0;
                 }
-
+            
                 if (consecutive >= 4)
                 {
                     return true;
                 }
-
+                // line goes down (decrease)
+                // column goes right (increase)
                 lineIndex--;
                 colIndex++;
             }
+
+            // lineIndex = line + 4;
+            // colIndex = col - 4;
+            // while (lineIndex < line - 3 && colIndex < col + 3)
+            // {
+            //     // check for index errors
+            //     if (lineIndex > LineCount - 1
+            //         || lineIndex < 0
+            //         || colIndex > ColCount
+            //         || colIndex < 0)
+            //     {
+            //         continue;
+            //     }
+            //
+            //     if (_board[colIndex, lineIndex] == piecePlayed)
+            //     {
+            //         consecutive++;
+            //     }
+            //     else
+            //     {
+            //         consecutive = 0;
+            //     }
+            //
+            //     if (consecutive >= 4)
+            //     {
+            //         return true;
+            //     }
+            //
+            //     lineIndex--;
+            //     colIndex++;
+            // }
 
             return false;
         }
