@@ -130,83 +130,150 @@ namespace Puissance4
             return false;
         }
 
+        // private bool _checkDiags(int line, int col)
+        // {
+        // char piecePlayed = _board[col, line];
+        //
+        // int lineIndex;
+        // int colIndex;
+        //
+        // int consecutive = 0;
+        //
+        // // check topleft - bottom right
+        // lineIndex = line + 4;
+        // colIndex = line - 4;
+        // while (lineIndex < line - 4 && colIndex < col + 4)
+        // {
+        //     // check for index errors
+        //     if (lineIndex > LineCount - 1
+        //         || lineIndex < 0
+        //         || colIndex > ColCount
+        //         || colIndex < 0)
+        //     {
+        //         lineIndex--;
+        //         colIndex++;
+        //         continue;
+        //     }
+        //
+        //     if (_board[colIndex, lineIndex] == piecePlayed)
+        //     {
+        //         consecutive++;
+        //     }
+        //     else
+        //     {
+        //         consecutive = 0;
+        //     }
+        //
+        //     if (consecutive >= 4)
+        //     {
+        //         return true;
+        //     }
+        //     // line goes down (decrease)
+        //     // column goes right (increase)
+        //     lineIndex--;
+        //     colIndex++;
+        // }
+        //
+        // lineIndex = line + 4;
+        // colIndex = col - 4;
+        // while (lineIndex < line - 3 && colIndex < col + 3)
+        // {
+        //     // check for index errors
+        //     if (lineIndex > LineCount - 1
+        //         || lineIndex < 0
+        //         || colIndex > ColCount
+        //         || colIndex < 0)
+        //     {
+        //         lineIndex--;
+        //         colIndex++;
+        //         continue;
+        //     }
+        //
+        //     if (_board[colIndex, lineIndex] == piecePlayed)
+        //     {
+        //         consecutive++;
+        //     }
+        //     else
+        //     {
+        //         consecutive = 0;
+        //     }
+        //
+        //     if (consecutive >= 4)
+        //     {
+        //         return true;
+        //     }
+        //
+        //     lineIndex--;
+        //     colIndex++;
+        // }
+        //
+        // return false;
+        // }
+
+
         private bool _checkDiags(int line, int col)
         {
-            // char piecePlayed = _board[col, line];
-            //
-            // int lineIndex;
-            // int colIndex;
-            //
-            // int consecutive = 0;
-            //
-            // // check topleft - bottom right
-            // lineIndex = line + 4;
-            // colIndex = line - 4;
-            // while (lineIndex < line - 4 && colIndex < col + 4)
-            // {
-            //     // check for index errors
-            //     if (lineIndex > LineCount - 1
-            //         || lineIndex < 0
-            //         || colIndex > ColCount
-            //         || colIndex < 0)
-            //     {
-            //         continue;
-            //     }
-            //
-            //     if (_board[colIndex, lineIndex] == piecePlayed)
-            //     {
-            //         consecutive++;
-            //     }
-            //     else
-            //     {
-            //         consecutive = 0;
-            //     }
-            //
-            //     if (consecutive >= 4)
-            //     {
-            //         return true;
-            //     }
-            //     // line goes down (decrease)
-            //     // column goes right (increase)
-            //     lineIndex--;
-            //     colIndex++;
-            // }
+            int consecutive = 0;
+            char pieceToCheck = _board[col, line];
 
-            // lineIndex = line + 4;
-            // colIndex = col - 4;
-            // while (lineIndex < line - 3 && colIndex < col + 3)
-            // {
-            //     // check for index errors
-            //     if (lineIndex > LineCount - 1
-            //         || lineIndex < 0
-            //         || colIndex > ColCount
-            //         || colIndex < 0)
-            //     {
-            //         continue;
-            //     }
-            //
-            //     if (_board[colIndex, lineIndex] == piecePlayed)
-            //     {
-            //         consecutive++;
-            //     }
-            //     else
-            //     {
-            //         consecutive = 0;
-            //     }
-            //
-            //     if (consecutive >= 4)
-            //     {
-            //         return true;
-            //     }
-            //
-            //     lineIndex--;
-            //     colIndex++;
-            // }
+            // top left -> bottom right
+            int lineIndex = line - 5;
+            int colIndex = col - 5;
+
+            while (lineIndex < line + 4 && colIndex < col + 4)
+            {
+                lineIndex++;
+                colIndex++;
+                if (lineIndex < 0
+                    || lineIndex > LineCount - 1
+                    || colIndex < 0
+                    || colIndex > ColCount - 1)
+                {
+                    continue;
+                }
+
+                if (_board[colIndex, lineIndex] == pieceToCheck)
+                {
+                    consecutive++;
+                }
+                else
+                {
+                    consecutive = 0;
+                }
+
+                if (consecutive >= 4)
+                {
+                    return true;
+                }
+            }
+
+
+            // bottom left -> top right
+            lineIndex = line + 5;
+            colIndex = col - 5;
+
+            while (lineIndex < line - 5 || colIndex < col + 5)
+            {
+                lineIndex--;
+                colIndex++;
+
+                if (lineIndex < 0
+                    || lineIndex > LineCount - 1
+                    || colIndex < 0
+                    || colIndex > ColCount - 1)
+                {
+                    continue;
+                }
+
+                if (_board[colIndex, lineIndex] == pieceToCheck) consecutive++;
+                else consecutive = 0;
+
+                if (consecutive >= 4) return true;
+            }
 
             return false;
         }
-        
-        #endregion
 
+        #endregion
     }
 }
