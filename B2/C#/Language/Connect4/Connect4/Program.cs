@@ -11,7 +11,7 @@ namespace Puissance4
             do
             {
                 Display(game);
-                for (; ; )
+                for (;;)
                 {
                     Console.WriteLine($"Player {game.PlayerNumber} : Which column 1-{game.ColCount} ?");
 
@@ -23,12 +23,13 @@ namespace Puissance4
                         game.Play(column);
                         break;
                     }
+
                     Console.Error.WriteLine("Invalid column number.");
                 }
-            }
-            while (!game.Ended);
+            } while (!game.Ended);
+
             Display(game);
-            if(game.Winner == 0)
+            if (game.Winner == 0)
             {
                 Console.WriteLine("Draw");
             }
@@ -37,6 +38,7 @@ namespace Puissance4
                 Console.WriteLine($"Player {game.Winner} wins.");
             }
         }
+
         private static void Display(Connect4 game)
         {
             for (int y = 0; y < game.LineCount; y++)
@@ -45,17 +47,21 @@ namespace Puissance4
                 {
                     Console.Write($"| {game.GetPawn(x, y)} ");
                 }
+
                 Console.WriteLine("|");
                 for (int x = 0; x < game.ColCount; x++)
                 {
                     Console.Write($"+---");
                 }
+
                 Console.WriteLine("+");
             }
+
             for (int x = 0; x < game.ColCount; x++)
             {
                 Console.Write($"  {x + 1} ");
             }
+
             Console.WriteLine();
         }
     }
