@@ -17,14 +17,15 @@ namespace Puissance4
 
                     var turn = Console.ReadLine();
                     int column;
-
-                    if (int.TryParse(turn, out column))
+                    
+                    // check if column is within ColCout bounds
+                    if (int.TryParse(turn, out column) && (column > 0 && column <= game.ColCount))
                     {
-                        game.Play(column);
-                        break;
+                        bool played = game.Play(column);
+                        if (played) break;
                     }
 
-                    Console.Error.WriteLine("Invalid column number.");
+                    Console.Error.WriteLine("Invalid play.");
                 }
             } while (!game.Ended);
 
