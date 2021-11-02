@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\EPSI\\EPSI\\B2\\C#\\Language\\Connect4\\Connect4\\Connect4.csproj": {}
+    "D:\\projects\\epsi\\B2\\C#\\Language\\Connect4\\Connect4\\Connect4.csproj": {}
   },
   "projects": {
-    "C:\\projects\\EPSI\\EPSI\\B2\\C#\\Language\\Connect4\\Connect4\\Connect4.csproj": {
+    "D:\\projects\\epsi\\B2\\C#\\Language\\Connect4\\Connect4\\Connect4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\EPSI\\EPSI\\B2\\C#\\Language\\Connect4\\Connect4\\Connect4.csproj",
+        "projectUniqueName": "D:\\projects\\epsi\\B2\\C#\\Language\\Connect4\\Connect4\\Connect4.csproj",
         "projectName": "Connect4",
-        "projectPath": "C:\\projects\\EPSI\\EPSI\\B2\\C#\\Language\\Connect4\\Connect4\\Connect4.csproj",
+        "projectPath": "D:\\projects\\epsi\\B2\\C#\\Language\\Connect4\\Connect4\\Connect4.csproj",
         "packagesPath": "C:\\Users\\germa\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\EPSI\\EPSI\\B2\\C#\\Language\\Connect4\\Connect4\\obj\\",
+        "outputPath": "D:\\projects\\epsi\\B2\\C#\\Language\\Connect4\\Connect4\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\germa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\germa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

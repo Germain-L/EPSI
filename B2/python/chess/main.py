@@ -1,14 +1,27 @@
-from objects.chess import Chess
+from board import Board
 
-# Press the green button in the gutter to run the script.
+
+class Chess:
+
+    def __init__(self):
+        self._board = Board()
+
+    @property
+    def board(self) -> Board:
+        return self._board
+
+    def __str__(self):
+        string = ""
+
+        for row in self._board:
+            for col in row:
+                string += str(col) + " "
+
+            string += "\n"
+
+        return string
+
+
 if __name__ == '__main__':
-    chess = Chess("Germain", "Rose")
-    print(chess.player1_name, chess.player2_name)
-    for rows in chess.board:
-        for coord in rows:
-            if coord.color:
-                print("x", end="")
-            else:
-                print("y", end="")
-
-        print("")
+    chess = Chess()
+    print(chess)
