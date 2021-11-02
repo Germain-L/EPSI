@@ -11,8 +11,6 @@ class Board:
         self._turn = 'black' if self._turn == 'white' else 'white'
 
     def populate_board(self):
-        print('Populating board...')
-
         first_line = [
             Piece('♖', 'white'),
             Piece('♘', 'white'),
@@ -45,26 +43,26 @@ class Board:
         return self._board
 
     def __iter__(self):
-        ''' Returns the Iterator object '''
+        ''' Returns the next row '''
         return BoardIterator(self)
+    
+    def __len__(self):
+        return len(self._board)
+    
+    def __getitem__(self, index):
+        return self._board[index]
 
 
 class BoardIterator:
     def __init__(self, board):
         self._board = board
         self._row_index = 0
-        self._col_index = 0
 
     def __next__(self):
         if self._row_index < len(self._board.board):
-            result = self._board[self._row_index][self._col_index]
+            result = self._board.board[self._row_index]
 
-            if self._col_index == 7:
-                self._row_index += 1
-                self._col_index = 0
-
-            else:
-                self._col_index += 1
+            self._row_index += 1
 
             return result
 
