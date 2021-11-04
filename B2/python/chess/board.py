@@ -5,10 +5,9 @@ class Board:
     def __init__(self):
         self._turn = 'white'
         self._board = [[' ' for _ in range(8)] for _ in range(8)]
+        
+        # Add pieces to the board
         self.populate_board()
-
-    def next_turn(self):
-        self._turn = 'black' if self._turn == 'white' else 'white'
 
     def populate_board(self):
         first_line = [
@@ -42,22 +41,28 @@ class Board:
     def board(self) -> list:
         return self._board
 
+    
+    # Override iter method to be able to iterate over the board
     def __iter__(self):
-        ''' Returns the next row '''
+        '''Returns the next row'''
         return BoardIterator(self)
     
+    # Override len method to be able to get the length of the board
     def __len__(self):
         return len(self._board)
     
+    # Override getitem method to be able to get the item at a specific index
     def __getitem__(self, index):
         return self._board[index]
 
 
+# Iterator class to iterate over the board
 class BoardIterator:
     def __init__(self, board):
         self._board = board
         self._row_index = 0
 
+    # Override next method to be able to get the next result of the iterator
     def __next__(self):
         if self._row_index < len(self._board.board):
             result = self._board.board[self._row_index]

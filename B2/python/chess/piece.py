@@ -15,5 +15,6 @@ class Piece:
     def color(self, value):
         self._color = value
 
+    # Used to print the piece
     def __str__(self) -> str:
         return self._icon
