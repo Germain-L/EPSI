@@ -60,14 +60,14 @@ class Board:
 class BoardIterator:
     def __init__(self, board):
         self._board = board
-        self._row_index = 0
+        self.__index = 0
 
     # Override next method to be able to get the next result of the iterator
     def __next__(self):
-        if self._row_index < len(self._board.board):
-            result = self._board.board[self._row_index]
+        if self.__index < len(self._board.board):
+            result = self._board.board[self.__index]
 
-            self._row_index += 1
+            self.__index += 1
 
             return result
 
