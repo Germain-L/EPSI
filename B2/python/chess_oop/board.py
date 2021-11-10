@@ -43,6 +43,12 @@ class Board:
                 self.__grid[row_index] = ChessRow(
                     row_index + 1, [ChessPiece.EMPTY for _ in range(8)])
 
+    def move(self, orignal, new):
+        '''convert Letter to row number'''
+        row = orignal[0].translate(str.maketrans('12345678', 'ABCDEFGH'))
+        column = orignal[1]
+        # TODO
+
     def __str__(self) -> str:
         return str(self.__grid)
 

@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\epsi\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStockTest\\AtelierStockTest.csproj": {}
+    "D:\\code\\EPSI\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStockTest\\AtelierStockTest.csproj": {}
   },
   "projects": {
-    "D:\\projects\\epsi\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStockTest\\AtelierStockTest.csproj": {
+    "D:\\code\\EPSI\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStockTest\\AtelierStockTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStockTest\\AtelierStockTest.csproj",
+        "projectUniqueName": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStockTest\\AtelierStockTest.csproj",
         "projectName": "AtelierStockTest",
-        "projectPath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStockTest\\AtelierStockTest.csproj",
+        "projectPath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStockTest\\AtelierStockTest.csproj",
         "packagesPath": "C:\\Users\\germa\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStockTest\\obj\\",
+        "outputPath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStockTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\germa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\germa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\projects\\epsi\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStock\\AtelierStock.csproj": {
-                "projectPath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStock\\AtelierStock.csproj"
+              "D:\\code\\EPSI\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStock\\AtelierStock.csproj": {
+                "projectPath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStock\\AtelierStock.csproj"
               }
             }
           }
@@ -76,28 +74,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\germa\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects\\epsi\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStock\\AtelierStock.csproj": {
+    "D:\\code\\EPSI\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStock\\AtelierStock.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStock\\AtelierStock.csproj",
+        "projectUniqueName": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStock\\AtelierStock.csproj",
         "projectName": "AtelierStock",
-        "projectPath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStock\\AtelierStock.csproj",
+        "projectPath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStock\\AtelierStock.csproj",
         "packagesPath": "C:\\Users\\germa\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStock\\obj\\",
+        "outputPath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\AtelierStock\\AtelierStock\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\germa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\germa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -130,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\germa\\.dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

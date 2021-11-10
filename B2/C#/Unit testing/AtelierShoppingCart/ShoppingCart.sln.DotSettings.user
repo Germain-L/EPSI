@@ -1,0 +1,22 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=634857fb_002D1630_002D4b53_002D943a_002De79daa3c0848/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Initialisation" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::FCC7C289-61A1-433C-BAF2-DD9C2FDD2A66::net5.0::AtelierShoppingCartTest.ArticleTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::FCC7C289-61A1-433C-BAF2-DD9C2FDD2A66::net5.0::AtelierShoppingCartTest.CartTest.Initialisation&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::FCC7C289-61A1-433C-BAF2-DD9C2FDD2A66::net5.0::AtelierShoppingCartTest.CartTest.TestArticles&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::FCC7C289-61A1-433C-BAF2-DD9C2FDD2A66::net5.0::AtelierShoppingCartTest.CartTest.TestArticlesAddWrongPrice&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::FCC7C289-61A1-433C-BAF2-DD9C2FDD2A66::net5.0::AtelierShoppingCartTest.CartTest.TestArticlesAddWrongQty&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::FCC7C289-61A1-433C-BAF2-DD9C2FDD2A66::net5.0::AtelierShoppingCartTest.CartTest.TestArticlesAddNegativePrice&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::FCC7C289-61A1-433C-BAF2-DD9C2FDD2A66::net5.0::AtelierShoppingCartTest.CartTest.TestArticlesAddNegativeQty&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::FCC7C289-61A1-433C-BAF2-DD9C2FDD2A66::net5.0::AtelierShoppingCartTest.CartTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8189e510_002D3b28_002D4e16_002Da00f_002Da993a70e9686/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestAddExistingArticle" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::FCC7C289-61A1-433C-BAF2-DD9C2FDD2A66::net5.0::AtelierShoppingCartTest.CartTest.TestAddExistingArticle&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::FCC7C289-61A1-433C-BAF2-DD9C2FDD2A66::net5.0::AtelierShoppingCartTest.CartTest.TestAddExistingArticleDifferentPrice&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::FCC7C289-61A1-433C-BAF2-DD9C2FDD2A66::net5.0::AtelierShoppingCartTest.CartTest.TestDecreaseQuantity&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::FCC7C289-61A1-433C-BAF2-DD9C2FDD2A66::net5.0::AtelierShoppingCartTest.CartTest.TestRemoveWithDecrease&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::FCC7C289-61A1-433C-BAF2-DD9C2FDD2A66::net5.0::AtelierShoppingCartTest.CartTest.TestRemoveInexistant&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

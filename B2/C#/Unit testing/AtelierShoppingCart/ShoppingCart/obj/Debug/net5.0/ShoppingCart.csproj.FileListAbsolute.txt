@@ -1,0 +1,12 @@
+D:\code\EPSI\B2\C#\Unit testing\AtelierShoppingCart\ShoppingCart\bin\Debug\net5.0\ShoppingCart.deps.json
+D:\code\EPSI\B2\C#\Unit testing\AtelierShoppingCart\ShoppingCart\bin\Debug\net5.0\ShoppingCart.dll
+D:\code\EPSI\B2\C#\Unit testing\AtelierShoppingCart\ShoppingCart\bin\Debug\net5.0\ref\ShoppingCart.dll
+D:\code\EPSI\B2\C#\Unit testing\AtelierShoppingCart\ShoppingCart\bin\Debug\net5.0\ShoppingCart.pdb
+D:\code\EPSI\B2\C#\Unit testing\AtelierShoppingCart\ShoppingCart\obj\Debug\net5.0\ShoppingCart.csproj.AssemblyReference.cache
+D:\code\EPSI\B2\C#\Unit testing\AtelierShoppingCart\ShoppingCart\obj\Debug\net5.0\ShoppingCart.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\EPSI\B2\C#\Unit testing\AtelierShoppingCart\ShoppingCart\obj\Debug\net5.0\ShoppingCart.AssemblyInfoInputs.cache
+D:\code\EPSI\B2\C#\Unit testing\AtelierShoppingCart\ShoppingCart\obj\Debug\net5.0\ShoppingCart.AssemblyInfo.cs
+D:\code\EPSI\B2\C#\Unit testing\AtelierShoppingCart\ShoppingCart\obj\Debug\net5.0\ShoppingCart.csproj.CoreCompileInputs.cache
+D:\code\EPSI\B2\C#\Unit testing\AtelierShoppingCart\ShoppingCart\obj\Debug\net5.0\ShoppingCart.dll
+D:\code\EPSI\B2\C#\Unit testing\AtelierShoppingCart\ShoppingCart\obj\Debug\net5.0\ref\ShoppingCart.dll
+D:\code\EPSI\B2\C#\Unit testing\AtelierShoppingCart\ShoppingCart\obj\Debug\net5.0\ShoppingCart.pdb
