@@ -1,0 +1,16 @@
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\bin\Debug\net5.0\ConsoleRomaine.exe
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\bin\Debug\net5.0\ConsoleRomaine.deps.json
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\bin\Debug\net5.0\ConsoleRomaine.runtimeconfig.json
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\bin\Debug\net5.0\ConsoleRomaine.runtimeconfig.dev.json
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\bin\Debug\net5.0\ConsoleRomaine.dll
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\bin\Debug\net5.0\ref\ConsoleRomaine.dll
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\bin\Debug\net5.0\ConsoleRomaine.pdb
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\obj\Debug\net5.0\ConsoleRomaine.csproj.AssemblyReference.cache
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\obj\Debug\net5.0\ConsoleRomaine.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\obj\Debug\net5.0\ConsoleRomaine.AssemblyInfoInputs.cache
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\obj\Debug\net5.0\ConsoleRomaine.AssemblyInfo.cs
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\obj\Debug\net5.0\ConsoleRomaine.csproj.CoreCompileInputs.cache
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\obj\Debug\net5.0\ConsoleRomaine.dll
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\obj\Debug\net5.0\ref\ConsoleRomaine.dll
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\obj\Debug\net5.0\ConsoleRomaine.pdb
+D:\projects\epsi\B2\C#\Unit testing\TDD\ConsoleRomaine\ConsoleRomaine\obj\Debug\net5.0\ConsoleRomaine.genruntimeconfig.cache
