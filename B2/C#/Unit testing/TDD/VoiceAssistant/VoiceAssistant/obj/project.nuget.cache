@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vmlUM4sKwywepfG3rbTqKF6Mc1Trqx4yyEl5nOEesKQzHrnowmGBkGw1b8PMB2SlHMsMnCujCSmGQZKHeOk2Ew==",
+  "dgSpecHash": "sBstdDdwBc8qzBpmmedAxcIOfzDCdbjSKcHcfItFFWlmGQX5WtJDSj2z/cCVRuQ5Gz7M+8OzcNd+gfToS6xG2g==",
   "success": true,
-  "projectFilePath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\VoiceAssistant.csproj",
+  "projectFilePath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\VoiceAssistant.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

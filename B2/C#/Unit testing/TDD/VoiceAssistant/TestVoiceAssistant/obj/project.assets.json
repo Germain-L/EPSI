@@ -6135,11 +6135,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\TestVoiceAssistant\\TestVoiceAssistant.csproj",
+      "projectUniqueName": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\TestVoiceAssistant\\TestVoiceAssistant.csproj",
       "projectName": "TestVoiceAssistant",
-      "projectPath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\TestVoiceAssistant\\TestVoiceAssistant.csproj",
+      "projectPath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\TestVoiceAssistant\\TestVoiceAssistant.csproj",
       "packagesPath": "C:\\Users\\germa\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\TestVoiceAssistant\\obj\\",
+      "outputPath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\TestVoiceAssistant\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\germa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6156,8 +6156,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\projects\\epsi\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\VoiceAssistant.csproj": {
-              "projectPath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\VoiceAssistant.csproj"
+            "D:\\code\\EPSI\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\VoiceAssistant.csproj": {
+              "projectPath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\VoiceAssistant.csproj"
             }
           }
         }
@@ -6204,7 +6204,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,16 @@
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\bin\Debug\net5.0\ProjectScheduler.exe
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\bin\Debug\net5.0\ProjectScheduler.deps.json
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\bin\Debug\net5.0\ProjectScheduler.runtimeconfig.json
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\bin\Debug\net5.0\ProjectScheduler.runtimeconfig.dev.json
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\bin\Debug\net5.0\ProjectScheduler.dll
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\bin\Debug\net5.0\ref\ProjectScheduler.dll
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\bin\Debug\net5.0\ProjectScheduler.pdb
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\obj\Debug\net5.0\ProjectScheduler.csproj.AssemblyReference.cache
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\obj\Debug\net5.0\ProjectScheduler.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\obj\Debug\net5.0\ProjectScheduler.AssemblyInfoInputs.cache
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\obj\Debug\net5.0\ProjectScheduler.AssemblyInfo.cs
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\obj\Debug\net5.0\ProjectScheduler.csproj.CoreCompileInputs.cache
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\obj\Debug\net5.0\ProjectScheduler.dll
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\obj\Debug\net5.0\ref\ProjectScheduler.dll
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\obj\Debug\net5.0\ProjectScheduler.pdb
+D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\obj\Debug\net5.0\ProjectScheduler.genruntimeconfig.cache

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\epsi\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\VoiceAssistant.csproj": {}
+    "D:\\code\\EPSI\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\VoiceAssistant.csproj": {}
   },
   "projects": {
-    "D:\\projects\\epsi\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\VoiceAssistant.csproj": {
+    "D:\\code\\EPSI\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\VoiceAssistant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\VoiceAssistant.csproj",
+        "projectUniqueName": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\VoiceAssistant.csproj",
         "projectName": "VoiceAssistant",
-        "projectPath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\VoiceAssistant.csproj",
+        "projectPath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\VoiceAssistant.csproj",
         "packagesPath": "C:\\Users\\germa\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\obj\\",
+        "outputPath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\VoiceAssistant\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\germa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9+hCJ90op9ILeAUugW2lwBUrcbSdtw8j77PVu4dwnC4h7vyO0x2+hCu5WBqIOn/Vl6RcR8aGRsl36sDebLsNkA==",
+  "dgSpecHash": "vf0dVagoXW6v2BZoxb3pVitJvhGPFrT4Nl7gMAMBgT6R1XFImhfF1GYbjzRPr6BHIFgEYU0+qHYXKdnPOXoXXQ==",
   "success": true,
-  "projectFilePath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\TestVoiceAssistant\\TestVoiceAssistant.csproj",
+  "projectFilePath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\TDD\\VoiceAssistant\\TestVoiceAssistant\\TestVoiceAssistant.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\germa\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\germa\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
