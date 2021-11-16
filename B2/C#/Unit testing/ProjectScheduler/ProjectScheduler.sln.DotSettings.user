@@ -1,8 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=52d07106_002De8cc_002D4852_002D95b3_002Dcd55c71b8692/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="FromDbValidEndDate" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;MSTest::A6118E6F-EC3F-48C0-8C82-142FAFDC0F06::net5.0::ProjectSchedulerTest.TaskTest.FromDbValidEndDate&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;MSTest::A6118E6F-EC3F-48C0-8C82-142FAFDC0F06::net5.0::ProjectSchedulerTest.TaskTest.FromDbEndDateBeforeStartDate&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::A6118E6F-EC3F-48C0-8C82-142FAFDC0F06::net5.0::ProjectSchedulerTest.TaskTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c4e3300a_002Db2ba_002D4f29_002Da92c_002Dbd62dd26de98/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;

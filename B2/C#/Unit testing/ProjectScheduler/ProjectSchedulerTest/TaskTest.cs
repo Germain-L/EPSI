@@ -10,12 +10,13 @@ namespace ProjectSchedulerTest
     public class TaskTest
     {
         private readonly DateTime
-            Xmas11h00 = new DateTime  (2021, 12, 25, 11,  0, 0),
-            Xmas12h30 = new DateTime  (2021, 12, 25, 12, 30, 0),
-            Xmas14h00 = new DateTime  (2021, 12, 25, 14,  0, 0),
-            Jan1st12h30 = new DateTime(2022,  1,  1, 12, 30, 0);
+            Xmas11h00 = new DateTime(2021, 12, 25, 11, 0, 0),
+            Xmas12h30 = new DateTime(2021, 12, 25, 12, 30, 0),
+            Xmas14h00 = new DateTime(2021, 12, 25, 14, 0, 0),
+            Jan1st12h30 = new DateTime(2022, 1, 1, 12, 30, 0);
 
         #region Initialization
+
         [TestMethod]
         public void InitAllParameters()
         {
@@ -43,32 +44,64 @@ namespace ProjectSchedulerTest
 
             Assert.AreEqual(TimeSpan.FromDays(7), test.Duration);
         }
-        
+
         [TestMethod]
         public void InitWithDefaultStartDate()
         {
-            // TODO: today ?
-            Assert.Fail("Not implemented");
+            var stubClock = new Mock<IClock>();
+
+            stubClock.Setup(clock => clock.Now).Returns(Xmas12h30);
+            IClock.SetTestClock(stubClock.Object);
+
+            var test = new Task("foo");
+
+            Assert.AreEqual(Xmas12h30, test.Start);
         }
 
         [TestMethod]
         public void InitNoEndDateWithPastStartDate()
         {
-            // TODO: Past ?
-            Assert.Fail("Not implemented");
+            var stubClock = new Mock<IClock>();
+
+            var past = new DateTime(2012, 1, 1, 12, 30, 0);
+
+            stubClock.Setup(clock => clock.Now).Returns(past);
+            IClock.SetTestClock(stubClock.Object);
+
+            var test = new Task("foo");
+
+            Assert.AreEqual(past, test.Start);
         }
 
         [TestMethod]
         public void InitNoEndDateWithStartDateAtNow()
         {
-            // TODO: now ?
-            Assert.Fail("Not implemented");
+            var stubClock = new Mock<IClock>();
+
+            var now = stubClock.Object.Now;
+
+
+            stubClock.Setup(clock => clock.Now).Returns(now);
+            IClock.SetTestClock(stubClock.Object);
+
+            var test = new Task("foo");
+
+            Assert.AreEqual(now, test.Start);
         }
+
         [TestMethod]
         public void InitNoEndDateWithFutureStartDate()
         {
-            // TODO: future ?
-            Assert.Fail("Not implemented");
+            var stubClock = new Mock<IClock>();
+
+            var future = new DateTime(2022, 1, 1, 12, 30, 0);
+
+            stubClock.Setup(clock => clock.Now).Returns(future);
+            IClock.SetTestClock(stubClock.Object);
+
+            var test = new Task("foo");
+
+            Assert.AreEqual(future, test.Start);
         }
 
         [TestMethod]
@@ -83,12 +116,14 @@ namespace ProjectSchedulerTest
         public void InitWithBadEndDate()
         {
             Action act = () => new Task("foo", Xmas12h30, Xmas11h00);
-            
+
             Assert.ThrowsException<ArgumentOutOfRangeException>(act);
         }
+
         #endregion
 
         #region Change Title
+
         [TestMethod]
         public void ChangeTitle()
         {
@@ -98,6 +133,7 @@ namespace ProjectSchedulerTest
 
             Assert.AreEqual("bar", test.Title);
         }
+
         [TestMethod]
         public void ChangeNullTitle()
         {
@@ -107,9 +143,11 @@ namespace ProjectSchedulerTest
 
             Assert.ThrowsException<NullReferenceException>(act);
         }
+
         #endregion
 
         #region Change Start
+
         [TestMethod]
         public void ChangeStartForEndedTask()
         {
@@ -123,33 +161,39 @@ namespace ProjectSchedulerTest
             Assert.AreEqual(Xmas12h30, test.End);
             Assert.AreEqual(TimeSpan.FromMinutes(90), test.Duration);
         }
+
         [TestMethod]
         public void ChangeStartForNotEndedTaskFromPastToPast()
         {
             // TODO: future/past ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void ChangeStartForNotEndedTaskFromFutureToPast()
         {
             // TODO: future/past ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void ChangeStartForNotEndedTaskFromPastToFuture()
         {
             // TODO: future/past ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void ChangeStartForNotEndedTaskFromFutureToFuture()
         {
             // TODO: future/past ?
             Assert.Fail("Not implemented");
         }
+
         #endregion
 
         #region Change End
+
         [TestMethod]
         public void ChangeEnd()
         {
@@ -163,6 +207,7 @@ namespace ProjectSchedulerTest
             Assert.AreEqual(Xmas12h30, test.End);
             Assert.AreEqual(TimeSpan.FromMinutes(90), test.Duration);
         }
+
         [TestMethod]
         public void ChangeEndBeforeStart()
         {
@@ -172,9 +217,11 @@ namespace ProjectSchedulerTest
 
             Assert.ThrowsException<ArgumentOutOfRangeException>(act);
         }
+
         #endregion
 
         #region FromDb
+
         [TestMethod]
         public void FromDbNullEndDate()
         {
@@ -202,7 +249,7 @@ namespace ProjectSchedulerTest
         public void FromDbValidEndDate()
         {
             var stubDataReader = new Mock<IDataReader>();
-            
+
             stubDataReader.Setup(reader => reader.GetGuid(0))
                 .Returns(Guid.Parse("88F76BA1-C8A3-4261-BA44-76611DD4EBC1"));
             stubDataReader.Setup(reader => reader.GetString(1))
@@ -211,7 +258,7 @@ namespace ProjectSchedulerTest
                 .Returns(Xmas11h00);
             stubDataReader.Setup(reader => reader.IsDBNull(3))
                 .Returns(true);
-            
+
             Task test = Task.FromDb(stubDataReader.Object);
             test.End = Jan1st12h30;
 
@@ -227,7 +274,7 @@ namespace ProjectSchedulerTest
         public void FromDbEndDateBeforeStartDate()
         {
             var stubDataReader = new Mock<IDataReader>();
-            
+
             stubDataReader.Setup(reader => reader.GetGuid(0))
                 .Returns(Guid.Parse("88F76BA1-C8A3-4261-BA44-76611DD4EBC1"));
             stubDataReader.Setup(reader => reader.GetString(1))
@@ -236,22 +283,25 @@ namespace ProjectSchedulerTest
                 .Returns(Jan1st12h30);
             stubDataReader.Setup(reader => reader.IsDBNull(3))
                 .Returns(true);
-            
+
             Task test = Task.FromDb(stubDataReader.Object);
 
             Action act = () => test.End = Xmas11h00;
-            
+
             Assert.ThrowsException<ArgumentOutOfRangeException>(act);
         }
+
         #endregion
 
         #region FromXml
+
         [TestMethod]
         public void FromXmlWithEndDate()
         {
             // TODO: XmlReader ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void FromXmlNoEndDate()
         {
@@ -265,39 +315,46 @@ namespace ProjectSchedulerTest
             // TODO: XmlReader ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void FromXmlNoStartDate()
         {
             // TODO: XmlReader ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void FromXmlNoGuid()
         {
             // TODO: XmlReader ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void FromXmlInvalidGuid()
         {
             // TODO: XmlReader ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void FromXmlInvalidStartDate()
         {
             // TODO: XmlReader ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void FromXmlInvalidEndDate()
         {
             // TODO: XmlReader ?
             Assert.Fail("Not implemented");
         }
+
         #endregion
 
         #region ToXml
+
         [TestMethod]
         public void ToXmlWithDate()
         {
@@ -314,72 +371,85 @@ namespace ProjectSchedulerTest
             mockWriter.Verify(writer => writer.WriteAttributeString("end", "12/25/2021 14:00:00"), Times.Once);
             mockWriter.Verify(writer => writer.WriteEndElement(), Times.Once);
         }
+
         [TestMethod]
         public void ToXmlWithNoDate()
         {
             // TODO: XmlWriter ?
             Assert.Fail("Not implemented");
         }
+
         #endregion
 
         #region FromCsv
+
         [TestMethod]
         public void FromCsvWithEndDate()
         {
             // TODO: TextReader ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void FromCsvNoEndDate()
         {
             // TODO: TextReader ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void FromCsvNoStartDate()
         {
             // TODO: TextReader ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void FromCsvInvalidGuid()
         {
             // TODO: TextReader ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void FromCsvInvalidStartDate()
         {
             // TODO: TextReader ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void FromCsvInvalidEndDate()
         {
             // TODO: TextReader ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void FromCsvInvalidCalendarDate()
         {
             // TODO: TextReader ?
             Assert.Fail("Not implemented");
         }
+
         #endregion
 
         #region ToCsv
+
         [TestMethod]
         public void ToCsvWithDate()
         {
             // TODO: TextWriter ?
             Assert.Fail("Not implemented");
         }
+
         [TestMethod]
         public void ToCsvWithNoDate()
         {
             // TODO: TextReader ?
             Assert.Fail("Not implemented");
         }
+
         #endregion
     }
 }
