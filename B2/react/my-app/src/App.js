@@ -1,30 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
-import Input from './components/Input/Input.js';
-import Nav from "./components/Nav/Nav.js";
-import Button from './components/Button/Button.js';
-import Form from './components/Form/Form.js';
+import Form from './components/Form/Form';
+import Nav from "./components/Nav/Nav";
 
 function App() {
+
+    const form = {
+        inputs: [
+            {label: 'Pseudo', name: 'pseudo', type: 'text', className: 'formInputs'},
+            {label: 'Mot de passe', name: 'password', type: 'password', className: 'formInputs'}
+        ],
+        button: {type: 'submit', name: 'Envoyer', className: 'formBtn'}
+    }
+
     return (
         <div className="App">
-            <header className="App-header">
+            <header className="App-header" style={styles.div}>
                 <Nav
                     classes='links'
                     data={
                         [
-                            { 'index': 'Accueil', 'href': '#' },
-                            { 'index': 'A propos', 'href': '#' },
-                            { 'index': 'Blog', 'href': '#' },
-                            { 'index': 'Contact', 'href': '#' }
+                            {'index': 'Accueil', 'href': '#'},
+                            {'index': 'A propos', 'href': '#'},
+                            {'index': 'Blog', 'href': '#'},
+                            {'index': 'Caontact', 'href': '#'}
                         ]
                     }
-                />
-                <Button
-                    className={null}
-                    name="ta mère"
-                    type="submit"
-                    onClick={() => { console.log('clicked') }}
                 />
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
@@ -32,29 +33,26 @@ function App() {
                 </p>
                 <a
                     className="App-link"
-                    href="https://reactjs.org/"
+                    href="https://reactjs.org"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     Learn React
                 </a>
-                <Input
-                    label='Hugo'
-                    name='hugo'
-                    type='text'
-                    ListeDesClasses='papa tonton tata'
-                />
-
-                <Input
-                    label='Paul'
-                    name='paul'
-                    type='text'
-                    ListeDesClasses='papa tonton tata'
+                <Form
+                    method='post'
+                    action={null}
+                    refs={form}
                 />
             </header>
-            <Form button={{ 'name': 'Valider', 'type': 'submit' }} />
         </div>
     );
+}
+
+const styles = {
+    div: {
+        backgroundColor: 'gold'
+    }
 }
 
 export default App;
