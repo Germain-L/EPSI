@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YyGwYiDTjuhEpw4IAiGcN7HYgXQDZCUQMC8kAhu79+lnmSbSQPc81/P9CzVuLBF8BDk7H6HdEYf5ibgHFusECA==",
+  "dgSpecHash": "710isRYJRgyioMQBrmKRuY99xxZDhkr70PjTvOyfMHsSqyOKRi+Gdk9UCkHfEBMD6Fe18QD6Svyc+OWuXCeskQ==",
   "success": true,
-  "projectFilePath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\ProjectScheduler\\ProjectScheduler\\ProjectScheduler.csproj",
+  "projectFilePath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\ProjectScheduler\\ProjectScheduler\\ProjectScheduler.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

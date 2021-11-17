@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = ProjectScheduler
-build_property.ProjectDir = D:\code\EPSI\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\
+build_property.ProjectDir = D:\projects\epsi\B2\C#\Unit testing\ProjectScheduler\ProjectScheduler\

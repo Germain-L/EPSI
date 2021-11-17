@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yo11Og0/hTUWPKSeKYMlIaxOuzzVBZxcSNcMjStbDNn4cItdQRqETcmDK0krfnXyFlMJLoe8dNeOjG7nrEWHxg==",
+  "dgSpecHash": "i/pteUqga7KQK3JcPzrbeF6Rf880ZbSyyFAe6g3xBT3unl1sQEd2vo+C2EHJDRAZywoNW7DrbQE9mxYRzZrsTg==",
   "success": true,
-  "projectFilePath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\ProjectScheduler\\ProjectSchedulerTest\\ProjectSchedulerTest.csproj",
+  "projectFilePath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\ProjectScheduler\\ProjectSchedulerTest\\ProjectSchedulerTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\germa\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\germa\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",

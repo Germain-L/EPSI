@@ -6603,11 +6603,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\ProjectScheduler\\ProjectSchedulerTest\\ProjectSchedulerTest.csproj",
+      "projectUniqueName": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\ProjectScheduler\\ProjectSchedulerTest\\ProjectSchedulerTest.csproj",
       "projectName": "ProjectSchedulerTest",
-      "projectPath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\ProjectScheduler\\ProjectSchedulerTest\\ProjectSchedulerTest.csproj",
+      "projectPath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\ProjectScheduler\\ProjectSchedulerTest\\ProjectSchedulerTest.csproj",
       "packagesPath": "C:\\Users\\germa\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\ProjectScheduler\\ProjectSchedulerTest\\obj\\",
+      "outputPath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\ProjectScheduler\\ProjectSchedulerTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\germa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6624,8 +6624,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\code\\EPSI\\B2\\C#\\Unit testing\\ProjectScheduler\\ProjectScheduler\\ProjectScheduler.csproj": {
-              "projectPath": "D:\\code\\EPSI\\B2\\C#\\Unit testing\\ProjectScheduler\\ProjectScheduler\\ProjectScheduler.csproj"
+            "D:\\projects\\epsi\\B2\\C#\\Unit testing\\ProjectScheduler\\ProjectScheduler\\ProjectScheduler.csproj": {
+              "projectPath": "D:\\projects\\epsi\\B2\\C#\\Unit testing\\ProjectScheduler\\ProjectScheduler\\ProjectScheduler.csproj"
             }
           }
         }
@@ -6676,7 +6676,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
