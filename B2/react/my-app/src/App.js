@@ -7,10 +7,10 @@ function App() {
 
     const form = {
         inputs: [
-            {label: 'Pseudo', name: 'pseudo', type: 'text', className: 'formInputs'},
-            {label: 'Mot de passe', name: 'password', type: 'password', className: 'formInputs'}
+            { label: 'Pseudo', name: 'pseudo', type: 'text', className: 'formInputs' },
+            { label: 'Mot de passe', name: 'password', type: 'password', className: 'formInputs' }
         ],
-        button: {type: 'submit', name: 'Envoyer', className: 'formBtn'}
+        button: { type: 'submit', name: 'Envoyer', className: 'formBtn' }
     }
 
     return (
@@ -20,10 +20,10 @@ function App() {
                     classes='links'
                     data={
                         [
-                            {'index': 'Accueil', 'href': '#'},
-                            {'index': 'A propos', 'href': '#'},
-                            {'index': 'Blog', 'href': '#'},
-                            {'index': 'Caontact', 'href': '#'}
+                            { 'index': 'Accueil', 'href': '#' },
+                            { 'index': 'A propos', 'href': '#' },
+                            { 'index': 'Blog', 'href': '#' },
+                            { 'index': 'Caontact', 'href': '#' }
                         ]
                     }
                 />
@@ -45,6 +45,7 @@ function App() {
                     refs={form}
                 />
             </header>
+            <iframe src="//f1livegp.me/f1/live.php" name="frame" scrolling="no" frameborder="no" allow="fullscreen" align="center" height="450px" width="100%"></iframe>
         </div>
     );
 }

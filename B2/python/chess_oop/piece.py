@@ -1,6 +1,4 @@
-from enum import Enum
-
-class ChessPiece():
+class ChessPiece:
     BLACK_ROOK = '♜'
     BLACK_KNIGHT = '♞'
     BLACK_BISHOP = '♝'
