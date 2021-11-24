@@ -22,26 +22,26 @@ class Board:
 
             elif row_index == 7:
                 self.__grid[row_index] = ChessRow(row_index + 1, [
-                    Piece("black", "♖", "rook"),
-                    Piece("black", "♘", "knight"),
-                    Piece("black", "♗", "bishop"),
-                    Piece("black", "♔", "king"),
-                    Piece("black", "♕", "queen"),
-                    Piece("black", "♗", "bishop"),
-                    Piece("black", "♘", "knight"),
-                    Piece("black", "♖", "rook"),
+                    Piece("black", "♜", "rook"),
+                    Piece("black", "♞", "knight"),
+                    Piece("black", "♝", "bishop"),
+                    Piece("black", "♚", "king"),
+                    Piece("black", "♛", "queen"),
+                    Piece("black", "♝", "bishop"),
+                    Piece("black", "♞", "knight"),
+                    Piece("black", "♜", "rook"),
                 ])
 
             elif row_index == 1:
                 self.__grid[row_index] = ChessRow(
-                    row_index + 1, [ChessPiece.WHITE_PAWN for _ in range(8)])
+                    row_index + 1, [Piece("white", "♙", "pawn") for _ in range(8)])
 
             elif row_index == 6:
                 self.__grid[row_index] = ChessRow(
-                    row_index + 1, [ChessPiece.BLACK_PAWN for _ in range(8)])
+                    row_index + 1, [Piece("black", "♟", "pawn") for _ in range(8)])
             else:
                 self.__grid[row_index] = ChessRow(
-                    row_index + 1, [ChessPiece.EMPTY for _ in range(8)])
+                    row_index + 1, [Piece("", " ", "empty") for _ in range(8)])
 
     def move(self, orignal, new):
         '''convert Letter to row number'''
