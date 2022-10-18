@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="572c76ba-402f-4046-aa4a-761292900049" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Restaurant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../B1/WORKSHOP-B1" beforeDir="false" afterPath="$PROJECT_DIR$/../../../B1/WORKSHOP-B1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../B1/python/Othello" beforeDir="false" afterPath="$PROJECT_DIR$/../../../B1/python/Othello" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../B2/symfony/company-directory" beforeDir="false" afterPath="$PROJECT_DIR$/../../../B2/symfony/company-directory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cafe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cafetiere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cafetiere.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tasse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tasse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TypeCafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TypeCafe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloWorld/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloWorld/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HelloWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloWorld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloWorld/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloWorld/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +33,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GFj9ntOf2vedbXI4Y9gEXmKdsT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,6 +47,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/projects/EPSI/EPSI/B3/java/ExoExtra",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
@@ -74,7 +77,7 @@
       <updated>1665991127327</updated>
       <workItem from="1665991129197" duration="2963000" />
       <workItem from="1665995720649" duration="1056000" />
-      <workItem from="1666092763645" duration="1401000" />
+      <workItem from="1666092763645" duration="10804000" />
     </task>
     <servers />
   </component>

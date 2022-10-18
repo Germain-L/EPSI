@@ -1,74 +1,91 @@
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import javax.swing.JOptionPane;
-import java.sql.SQLOutput;
 
 
 public class Main {
-    public static void main(String args[]) {
-        boolean reussite = true;
 
-        Cafetiere cafetiere = new Cafetiere();
+    public static void main(String args[])
+    {
+        Restaurant resto = new Restaurant() ;
 
-        Tasse tasseDefault = new Tasse();
-        Tasse tasseBut = new Tasse();
-        Tasse tasseAvecValeurs = new Tasse();
-        Tasse tasseAvecValeurNegative = new Tasse();
-        Tasse tasseVide = new Tasse();
+        ArrayList<Client> mesClientsBasic = new ArrayList<Client>(
+                Arrays.asList(
+                        new Client("Moka_100", new Cafe(), true),
+                        new Client("Java_100", new Cafe(TypeCafe.JAVA, 100), true),
+                        new Client("Typica_100", new Cafe(TypeCafe.TYPICA, 100), true),
+                        new Client("Bourbon_100", new Cafe(TypeCafe.BOURBON, 100), true)
+                )) ;
 
-        cafetiere.remplirTasse(tasseDefault);
-        cafetiere.remplirTasse(tasseBut);
-        cafetiere.remplirTasse(tasseAvecValeurs, TypeCafe.BOURBON, 200.4);
-        cafetiere.remplirTasse(tasseAvecValeurNegative, TypeCafe.JAVA, 200.2);
+        Restaurant restoMesClientsBasic = checkFactureTotal(mesClientsBasic) ;
 
-        tasseBut.boire();
-        tasseAvecValeurs.boire(100.2);
-        tasseAvecValeurNegative.boire(300.2);
+        int checkBasics = JOptionPane.showConfirmDialog(null, "Les petits clients aiment bien le café ! "
+                + "\n\nTu devrais avoir fait environ 11.7 en profit"
+                + "\nTu a fais " + restoMesClientsBasic.profit
+                + "\n\nC'est réussi ? ") ;
 
 
-        String presentationTypeCafe = "";
+        ArrayList<Client> mesClientsEtrange = new ArrayList<Client>(
+                Arrays.asList(
+                        new Client("Moka_600", new Cafe(TypeCafe.MOKA,600), false),
+                        new Client("Moka_2000", new Cafe(TypeCafe.MOKA,2000), new Tasse(2000)),
+                        new Client("Moka_2000", new Cafe(TypeCafe.MOKA,2000), new Tasse(1000))
+                )) ;
 
-        for (TypeCafe type : TypeCafe.values())
-            presentationTypeCafe += type.name() + "\n";
+        Restaurant restoMesClientsEtrange = checkFactureTotal(mesClientsEtrange) ;
+        System.out.println(restoMesClientsEtrange.profit);
+        int checkEtranges = JOptionPane.showConfirmDialog(null, "Même les clients étranges aiment bien le café ! "
+                + "\n\nTu devrais avoir fait environs 118.0 en profit"
+                + "\nTu a fais " + restoMesClientsEtrange.profit
+                + "\n\nMon Client 1 devrait avoir 500ml de café"
+                + "\nIl a " + mesClientsEtrange.get(0).tasse.cafe.quantiteLiquideMl
+                + "\n\nMon Client 2 devrait avoir 2000ml de café et être facturé 50"
+                + "\nIl a " + mesClientsEtrange.get(1).tasse.cafe.quantiteLiquideMl + "ml de café facturé à " + mesClientsEtrange.get(1).valeurFacture
+                + "\n\nMon Client 3 devrait avoir 1000ml de café et être facturé 50"
+                + "\nIl a " + mesClientsEtrange.get(2).tasse.cafe.quantiteLiquideMl + "ml de café facturé à " + mesClientsEtrange.get(2).valeurFacture
+                + "\n\nC'est réussi ? ") ;
 
-        int check1 = JOptionPane.showConfirmDialog(null, "Vous avez actuellement tout ces types de cafe \n" + presentationTypeCafe
-                + "\nSi vous avez bien fait votre travail cette liste devrai ressembler a ceci  :\n"
-                + "JAVA\r\n"
-                + "MOKA\r\n"
-                + "TYPICA\r\n"
-                + "BOURBON\r\n"
-                + "BATARD\r\n\n"
-                + "C'est réussi ? ");
+        ArrayList<Client> mesClientsInacceptable = new ArrayList<Client>(
+                Arrays.asList(
+                        new Client(),
+                        new Client("Batard_STasse", new Cafe(TypeCafe.BATARD, 600), false),
+                        new Client("Batard_ATasse", new Cafe(TypeCafe.BATARD, 600), true),
+                        new Client("Sans_Commande", null, false)
+                )) ;
 
-        int check2 = JOptionPane.showConfirmDialog(null,
-                "Cette tasse devrait contenir 100.0 ml de café MOKA \n"
-                        + "Ma tasse contient " + tasseDefault.cafe.quantiteLiquideMl + " ml de café " + tasseDefault.cafe.typeCafe + "\n\n"
+        Restaurant restoMesClientsInacceptable = checkFactureTotal(mesClientsInacceptable) ;
 
-                        + "Cette tasse devrait contenir 100.2 ml de café BOURBON \n"
-                        + "Ma tasse contient " + tasseAvecValeurs.cafe.quantiteLiquideMl + " ml de café " + tasseAvecValeurs.cafe.typeCafe + "\n\n"
+        int checkInacceptables = JOptionPane.showConfirmDialog(null, "Aucun de ces client n'est acceptable ! Aucun argent a faire avec ces gens !"
+                + "\n\nTu devrais faire un profit de 0.0"
+                + "\nTu a fait un profit de " + restoMesClientsInacceptable.profit
+                + "\n\nC'est réussi ? ") ;
 
-                        + "Cette tasse devrait contenir -100.0 ml de café JAVA (Eh oui, ce n'est pas un bug c'est une feature) \n "
-                        + "Ma tasse contient " + tasseAvecValeurNegative.cafe.quantiteLiquideMl + " ml de café " + tasseAvecValeurNegative.cafe.typeCafe + "\n\n"
 
-                        + "Cette tasse devrait contenir 0.0 ml de cafe MOKA \n"
-                        + "Ma tasse contient " + tasseBut.cafe.quantiteLiquideMl + " ml de café " + tasseBut.cafe.typeCafe + "\n\n"
+        Client devientBatard = new Client("Batard_STasse",new Cafe(TypeCafe.JAVA, 100), new Tasse(200)) ;
+        devientBatard.tasse.cafe = new Cafe() ;
+        restoMesClientsBasic.servir(devientBatard) ;
 
-                        + "C'est réussi ? "
-        );
+        int checkBatard = JOptionPane.showConfirmDialog(null,"Mon client devrait avoir 200ml de café batard (Si tout fonctionne correctement)"
+                +"\nMon client a " + devientBatard.tasse.cafe.quantiteLiquideMl + " ml de café " + devientBatard.tasse.cafe.typeCafe.name()
+                + "\n\nC'est réussi ? ") ;
 
-        try {
-            tasseVide.boire();
-            System.err.println("Nop, quelque chose ne fonctionne pas !");
-            reussite = false;
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Le programme plante quand je tente de boire dans une tasse vide. Ce n'est pas un bug, c'est une feature ;D");
-        }
-
-        if (check1 == 0 && check2 == 0 && reussite)
-            JOptionPane.showMessageDialog(null, "Bravo tu as réussi cet exo ! C'était simple non ?");
+        if(checkBasics == 0 && checkEtranges == 0 && checkInacceptables == 0 && checkBatard == 0)
+            JOptionPane.showMessageDialog(null, "Bravo tu as réussi cet exo ! Toujours plus simple non ?");
         else
             JOptionPane.showMessageDialog(null, "Quelque chose ne fonctionne pas :/ Dommage ! N'hésite pas à demander si tu as besoin d'aide ! ");
 
     }
 
+    public static Restaurant checkFactureTotal(ArrayList<Client> listeClient) {
+        Restaurant resto = new Restaurant() ;
 
+        for(Client client : listeClient) {
+            resto.servir(client) ;
+        }
+
+        return resto ;
+    }
 
 }

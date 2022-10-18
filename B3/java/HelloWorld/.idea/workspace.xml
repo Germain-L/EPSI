@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72514993-785c-4eda-a462-093e7a7bc535" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ExoExtra/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExoExtra/src/Restaurant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../B1/WORKSHOP-B1" beforeDir="false" afterPath="$PROJECT_DIR$/../../../B1/WORKSHOP-B1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../B1/python/Othello" beforeDir="false" afterPath="$PROJECT_DIR$/../../../B1/python/Othello" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../B2/symfony/company-directory" beforeDir="false" afterPath="$PROJECT_DIR$/../../../B2/symfony/company-directory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoExtra/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExoExtra/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExoExtra/src/TypeCafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ExoExtra/src/TypeCafe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +74,7 @@
       <workItem from="1666091130029" duration="453000" />
       <workItem from="1666091905114" duration="313000" />
       <workItem from="1666092238071" duration="386000" />
+      <workItem from="1666096483554" duration="178000" />
     </task>
     <servers />
   </component>
