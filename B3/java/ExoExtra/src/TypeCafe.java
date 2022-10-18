@@ -1,1 +1,1 @@
-enum TypeCafe {Java, Moka, Typica, Bourbon, Bâtard}
+enum TypeCafe {JAVA, MOKA, TYPICA, BOURBON, BATARD}

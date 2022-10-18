@@ -1,9 +1,9 @@
 public class Cafe {
     TypeCafe typeCafe;
-    float quantiteLiquideMl;
+    double quantiteLiquideMl;
 
     public Cafe() {
-        this.typeCafe = TypeCafe.Moka;
-        this.quantiteLiquideMl = 100f;
+        this.typeCafe = TypeCafe.MOKA;
+        this.quantiteLiquideMl = 100;
     }
 }
