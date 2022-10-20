@@ -1,17 +1,25 @@
 package gestion;
 
+import java.util.ArrayList;
+
 public class Restaurant {
     Cafetiere cafetiere;
     double profit;
 
-    public Restaurant() {
+    ArrayList<Client> listClientServi;
+
+    String nom;
+
+    public Restaurant(String nom) {
         this.cafetiere = new Cafetiere();
+        this.nom = nom;
+        listClientServi = new ArrayList<Client>();
     }
 
-    public void servir(Client client) {
+    public boolean servir(Client client) {
         if (client.commandeCafe == null) {
             client.valeurFacture = 0;
-            return;
+            return false;
         }
 
         if (client.tasse == null) {
@@ -27,7 +35,7 @@ public class Restaurant {
         if (client.commandeCafe.typeCafe == TypeCafe.BATARD) {
             System.out.println("Cafe non valide, dégage");
             client.valeurFacture = 0;
-            return;
+            return false;
         }
 
         if (client.tasse.cafe == null) {
@@ -45,6 +53,8 @@ public class Restaurant {
         }
 
         client.valeurFacture += client.tasse.cafe.typeCafe.coutParMl * client.commandeCafe.quantiteLiquideMl;
-        profit += client.valeurFacture;
+        this.profit += client.valeurFacture;
+        this.listClientServi.add(client);
+        return true;
     }
 }
