@@ -5,10 +5,10 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String args[]) {
-        new Exos().inputMain();
+        randomMain();
     }
 
-    public void randomMain() {
+    public static void randomMain() {
         ArrayList<Restaurant> restaurants = new ArrayList<Restaurant>();
         restaurants.add(new Restaurant("Latte sur les rochers"));
         restaurants.add(new Restaurant("Une tasse de joie"));
