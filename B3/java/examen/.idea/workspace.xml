@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97106e5b-ed82-4aa7-983b-66f794b03549" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examen.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CapsuleDeSecour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controleur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Creature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Race.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Vaisseau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B1/WORKSHOP-B1" beforeDir="false" afterPath="$PROJECT_DIR$/../../../B1/WORKSHOP-B1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B1/python/Othello" beforeDir="false" afterPath="$PROJECT_DIR$/../../../B1/python/Othello" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B2/symfony/company-directory" beforeDir="false" afterPath="$PROJECT_DIR$/../../../B2/symfony/company-directory" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,6 +52,7 @@
       <workItem from="1667804985771" duration="4296000" />
       <workItem from="1667809595909" duration="2814000" />
       <workItem from="1667814413516" duration="1315000" />
+      <workItem from="1667911009102" duration="20000" />
     </task>
     <servers />
   </component>
