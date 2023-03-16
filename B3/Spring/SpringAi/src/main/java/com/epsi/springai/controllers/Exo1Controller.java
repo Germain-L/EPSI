@@ -2,12 +2,14 @@ package com.epsi.springai.controllers;
 
 import com.epsi.springai.models.Room;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@RequestMapping("/exo1")
 public class Exo1Controller {
     @GetMapping("/")
     public void sayHello() {
